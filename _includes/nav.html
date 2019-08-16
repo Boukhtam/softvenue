@@ -4,17 +4,15 @@
         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
         <a title="{{ item.nav_title }}" href=".{{ item.nav_link }}/" class="nav-link">{{ item.nav_title }}</a>
     </li>
-    {% if item.nav_multi == true %}
     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11"
         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
-        <a title="Solutions" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            class="nav-link dropdown-toggle" id="menu-item-dropdown-11">{{ item.nav_multi_title.title }}</a>
+        <a title="{{ item.nav_multi_title.title }}" href=".{{ item.nav_multi_title.title }}" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"
+            id="menu-item-dropdown-11">{{ item.nav_multi_title.title }}</a>
         <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-11" role="menu">
-
             <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14 nav-item">
-                <a title="Web" href="/category/{{ item.all_item.nav_link }}/web/"
+                <a title="{{ item.all_item.nav_title }}" href="/category/{{ item.all_item.nav_link }}/"
                     class="nav-link">{{ item.all_item.nav_title }}</a>
             </li>
-            {% endif %}
             {% endfor %}
