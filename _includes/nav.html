@@ -5,10 +5,10 @@
         <a title="{{ item.nav_title }}" href=".{{ item.nav_link }}/" class="nav-link">{{ item.nav_title }}</a>
     </li>
     {% endfor %}
-    {% for item.all_item in site.data.nav %}
+    {% for item in site.data.nav %}
     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11"
         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
-        <a title="{{ item.nav_multi_title.title }}" href=".{{ item.nav_multi_title.title }}" data-toggle="dropdown"
+        <a title="{{ item.nav_multi_title.title }}" href=".{{ item.nav_multi_title }}" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"
             id="menu-item-dropdown-11">{{ item.nav_multi_title.title }}</a>
         <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-11" role="menu">
