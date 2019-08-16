@@ -1,20 +1,19 @@
 <ul id="menu-navbar" class="navbar-nav ml-auto">
     {% for item in site.data.nav %}
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20"
-        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20 nav-item">
-        <a title="{{ item.nav_title }}" href=".{{ item.nav_link }}/" class="nav-link">{{ item.nav_title }}</a>
-    </li>
-    {% endfor %}
-    {% for item in site.data.nav %}
-    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11"
-        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
-        <a title="{{ item.nav_multi_title.title }}" href=".{{ item.nav_multi_title }}" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"
-            id="menu-item-dropdown-11">{{ item.nav_multi_title.title }}</a>
-        <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-11" role="menu">
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14"
-                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14 nav-item">
-                <a title="{{ item.all_item.nav_title }}" href="/category/{{ item.all_item.nav_link }}/"
-                    class="nav-link">{{ item.all_item.nav_title }}</a>
-            </li>
-            {% endfor %}
+    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10 nav-item">
+        <a title="{{ item.title }}" href=".{{ item.link }}" class="nav-link">{{ item.title }}</a>
+    </li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
+        {% if site.data.nav[item].all_item %}
+<li>
+                <a title="{{ item.title }}" herf=".{{ item.link }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" id="menu-item-dropdown-11">{{ item.title }}</a>
+    <ul>
+        {% for item in site.data.nav[item].all_item %}
+        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14 nav-item">
+            <a title="{{ item.title }}" href=".{{ item.link }}" class="nav-link">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
