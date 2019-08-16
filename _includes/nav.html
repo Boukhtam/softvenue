@@ -5,7 +5,7 @@
         <a title="{{ item.nav_title }}" href=".{{ item.nav_link }}/" class="nav-link">{{ item.nav_title }}</a>
     </li>
     {% endfor %}
-    {% for item in site.data.nav %}
+    {% for item.all_item in site.data.nav %}
     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11"
         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
         <a title="{{ item.nav_multi_title.title }}" href=".{{ item.nav_multi_title.title }}" data-toggle="dropdown"
