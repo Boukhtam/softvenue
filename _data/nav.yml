@@ -1,0 +1,17 @@
+--- 
+- 
+  link: /product/contact.html
+  title: Contact
+- 
+  child: 
+    - 
+      link: /product/web.html
+      title: Web
+    - 
+      link: /product/mobile.html
+      title: Mobile
+    - 
+      link: /product/desktop.html
+      title: Logiciels
+  multi: true
+  title: Solutions
