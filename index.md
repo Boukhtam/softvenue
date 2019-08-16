@@ -16,7 +16,8 @@ layout: default
             <br>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias dolorem similique, animi, quasi
-                rem ratione, ex quia facilis dolor sed cum vero magni tenetur voluptas harum ea totam error!</p>
+                rem ratione, ex quia facilis dolor sed cum vero magni tenetur voluptas harum ea totam error!
+            </p>
         </div>
     </div>
     <br>
