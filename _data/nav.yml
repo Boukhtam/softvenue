@@ -1,21 +1,20 @@
 ---
-- nav_link: /category/realisation
-  nav_title: Réalisations
+- link: /category/realisation
+  title: Réalisations
 - all_item:
-    - nav_link: /category/solutions/web
-      nav_title: web
-    - nav_link: /category/solutions/mobile
-      nav_title: Mobile
-    - nav_link: /category/solutions/desktop/
-      nav_title: Logiciels
-  nav_link: /category/branding/
-  nav_multi_title: soulution
-  nav_s: multi
-- nav_link: /category/e-marketing/
-  nav_title: e-Marketing
-- nav_link: /category/formations/
-  nav_title: Formations
-- nav_link: /about
-  nav_title: "Qui sommes-nous?"
-- nav_link: /conactez-nous/
-  nav_title: contact
+    - link: /category/solutions/web
+      title: web
+    - link: /category/solutions/mobile
+      title: Mobile
+    - link: /category/solutions/desktop/
+      title: Logiciels
+  link: /category/branding/
+  title: soulution
+- link: /category/e-marketing/
+  title: e-Marketing
+- link: /category/formations/
+  title: Formations
+- link: /about
+  title: "Qui sommes-nous?"
+- link: /conactez-nous/
+  title: contact
