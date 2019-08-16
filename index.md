@@ -3,7 +3,6 @@ title: main
 layout: default
 ---
 
-
 <div class="container services">
     <div class="row mb-md-5 mt-5 py-5 outline-row">
         <div class="col-10">
