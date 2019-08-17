@@ -1,5 +1,4 @@
-<ul id="menu-navbar" class="navbar-nav ml-auto">
-    {% for item in site.data.nav %}
+{% for item in site.data.nav %}
     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10 nav-item">
         <a title="{{ item.title }}" href=".{{ item.link }}" class="nav-link">{{ item.title }}</a>
     </li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
@@ -16,4 +15,3 @@
 </li>
 {% endif %}
 {% endfor %}
-</ul>
