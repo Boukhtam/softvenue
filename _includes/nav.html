@@ -1,7 +1,7 @@
 {% for item in site.data.nav %}
     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10 nav-item">
         <a title="{{ item.title }}" href=".{{ item.link }}" class="nav-link">{{ item.title }}</a>
-    </li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
+    </li>
         {% if site.data.nav[item].all_item %}
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children dropdown menu-item-11 nav-item">
                 <a title="{{ item.title }}" herf=".{{ item.link }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" id="menu-item-dropdown-11">{{ item.title }}</a>
