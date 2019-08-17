@@ -9,6 +9,8 @@
         {{ item.title }}
     </a>
     </li>
+{% if site.data.nav[item].all_item %}
+        {% for sub_item in site.data.nav[item].all_item %}
 <li itemscope="itemscope" 
     itemtype="https://www.schema.org/SiteNavigationElement" 
     id="menu-item-11" 
@@ -23,9 +25,7 @@
     id="menu-item-dropdown-11">
     {{ item.title }}
 </a>
-{% if site.data.nav[item].all_item %}
     <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-11" role="menu">
-        {% for sub_item in site.data.nav[item].all_item %}
         <li 
         itemscope="itemscope" 
         itemtype="https://www.schema.org/SiteNavigationElement" 
@@ -37,8 +37,9 @@
             {{ sub_item.title }}
         </a>
         </li>
-        {% endfor %}
     </ul>
+    </li>
+            {% endfor %}
     {% endif %}
-</li>
+
 {% endfor %}
